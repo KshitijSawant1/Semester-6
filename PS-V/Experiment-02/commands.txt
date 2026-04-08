@@ -1,0 +1,185 @@
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git init 
+Initialized empty Git repository in /Users/kshitijksawant/Programs/Semester 6/.git/
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git branch -M main
+
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git remote add origin https://github.com/KshitijSawant1/Semester-6.git
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git remote -v
+
+origin  https://github.com/KshitijSawant1/Semester-6.git (fetch)
+origin  https://github.com/KshitijSawant1/Semester-6.git (push)
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git add .
+git commit -m "Initial commit – Semester 6"
+
+[main (root-commit) 5d8c014] Initial commit – Semester 6
+ 2 files changed, 45 insertions(+)
+ create mode 100644 Deep Learning/Exp 02 : Simple NN/code.py
+ create mode 100644 PS-V/Experiment-02/hello.txt
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git push -u origin main
+
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (8/8), 921 bytes | 921.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KshitijSawant1/Semester-6.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+ *  History restored 
+
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+ *  History restored 
+
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git pull origin main
+
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 1.09 KiB | 222.00 KiB/s, done.
+From https://github.com/KshitijSawant1/Semester-6
+ * branch            main       -> FETCH_HEAD
+   5d8c014..8aedd2b  main       -> origin/main
+Updating 5d8c014..8aedd2b
+Fast-forward
+ PS-V/Experiment-02/hello.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git checkout -b feature-unit-1
+
+Switched to a new branch 'feature-unit-1'
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git branch
+
+* feature-unit-1
+  main
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git push -u origin feature-unit-1
+
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature-unit-1' on GitHub by visiting:
+remote:      https://github.com/KshitijSawant1/Semester-6/pull/new/feature-unit-1
+remote: 
+To https://github.com/KshitijSawant1/Semester-6.git
+ * [new branch]      feature-unit-1 -> feature-unit-1
+branch 'feature-unit-1' set up to track 'origin/feature-unit-1'.
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git add .
+git commit -m "Add Unit 1 notes"
+
+[feature-unit-1 fa8a43b] Add Unit 1 notes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 PS-V/Experiment-02/Branch Data.txt
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git push origin feature-unit-1
+
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 467 bytes | 467.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KshitijSawant1/Semester-6.git
+   8aedd2b..fa8a43b  feature-unit-1 -> feature-unit-1
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git checkout feature-unit-1
+git pull origin feature-unit-1
+
+Already on 'feature-unit-1'
+Your branch is up to date with 'origin/feature-unit-1'.
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 1.17 KiB | 299.00 KiB/s, done.
+From https://github.com/KshitijSawant1/Semester-6
+ * branch            feature-unit-1 -> FETCH_HEAD
+   fa8a43b..03427ee  feature-unit-1 -> origin/feature-unit-1
+Updating fa8a43b..03427ee
+Fast-forward
+ PS-V/Experiment-02/Branch Data.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 %                  
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git checkout main
+
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git merge feature-unit-1
+
+Updating 8aedd2b..03427ee
+Fast-forward
+ PS-V/Experiment-02/Branch Data.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 PS-V/Experiment-02/Branch Data.txt
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git push origin main
+
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KshitijSawant1/Semester-6.git
+   8aedd2b..03427ee  main -> main
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git branch -d feature-unit-1
+
+Deleted branch feature-unit-1 (was 03427ee).
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git push origin --delete feature-unit-1
+
+To https://github.com/KshitijSawant1/Semester-6.git
+ - [deleted]         feature-unit-1
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % git log 
+commit 03427ee40fb03b5950706b4d288a7994801ec73f (HEAD -> main, origin/main)
+Author: KSHITIJ K SAWANT <sawantkshitij1@gmail.com>
+Date:   Wed Jan 28 15:07:23 2026 +0530
+
+    Commit PS-V / Exp-2 {Changes made to new branch from Github}
+    
+    Added additional information regarding changes made.
+
+commit fa8a43bc08e86a31e57b324920d5d7c7174ea52e
+Author: KSHITIJ K SAWANT <sawantkshitij1@gmail.com>
+Date:   Wed Jan 28 15:05:43 2026 +0530
+
+    Add Unit 1 notes
+
+commit 8aedd2b93cf940a462b86aa1c3ed46c720f5f4ba
+Author: KSHITIJ K SAWANT <sawantkshitij1@gmail.com>
+Date:   Wed Jan 28 15:01:58 2026 +0530
+
+    Commit PS-V / Exp-2 {Changes made on Github}
+
+commit 5d8c0142e8d786ba79f35ef18a9c21489ca16425
+Author: KSHITIJ K SAWANT <sawantkshitij1@gmail.com>
+Date:   Wed Jan 28 15:00:07 2026 +0530
+
+    Initial commit – Semester 6
+(END)
+
+    Add Unit 1 notes
+
+commit 8aedd2b93cf940a462b86aa1c3ed46c720f5f4ba
+Author: KSHITIJ K SAWANT <sawantkshitij1@gmail.com>
+Date:   Wed Jan 28 15:01:58 2026 +0530
+
+    Commit PS-V / Exp-2 {Changes made on Github}
+
+commit 5d8c0142e8d786ba79f35ef18a9c21489ca16425
+Author: KSHITIJ K SAWANT <sawantkshitij1@gmail.com>
+Date:   Wed Jan 28 15:00:07 2026 +0530
+
+    Initial commit – Semester 6
+
+kshitijksawant@KSHITIJs-MacBook-Pro Semester 6 % 
